@@ -33,10 +33,14 @@ Postfix expressions are evaluated using a stack:
 At completion, the stack contains a single result.
 
 ## Example
+
 Input:
+
 ```5 1 2 + 4 * + 3 -
 ```
-Output
+
+Output:
+
 ```14.0000
 ```
 
