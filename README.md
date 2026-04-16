@@ -1,6 +1,6 @@
 # Java Postfix Calculator
 
-This project implements an interactive **Postfix (Reverse Polish Notation) Calculator** in Java using a **stack-based evaluation strategy**. It supports both integer and **floating-point numbers**, allowing users to input mathematical expressions in postfix format and receive immediate results.
+This project implements an interactive Postfix (Reverse Polish Notation) Calculator in Java using a stack-based algorithm. It evaluates postfix expressions by pushing operands onto a stack and applying operators in sequence. The program supports both integer and floating-point numbers, allowing users to input expressions and receive immediate results.
 
 ## Features
 
