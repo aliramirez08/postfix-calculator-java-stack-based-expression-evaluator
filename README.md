@@ -4,66 +4,65 @@ This project implements an interactive Postfix (Reverse Polish Notation) Calcula
 
 ## Features
 
-- Accepts multi-token postfix expressions (e.g., `3.5 1.2 +`)
+- Evaluates postfix expressions
 - Supports floating-point arithmetic
-- Handles operators: `+`, `-`, `*`, `/`, `%`
-- Detects and reports:
-  - Invalid tokens
-  - Insufficient operands
-  - Division or modulo by zero
-  - Malformed expressions
-- Continuous interactive input (type `exit` to quit)
+- Handles operators: +, -, *, /, %
+- Detects invalid input and errors
+- Continuous user input until exit
 
-## Concepts Covered
+## Concepts Demonstrated
 - Stacks (data structures)
-- Expression parsing
+- Expression evaluation
+- Algorithm design
 - Error handling and validation
-- Algorithmic problem solving
 
-## How It Works
-Postfix expressions are evaluated using a stack:
+## Technologies Used
+- Java
+- JDK 11+
 
-1. Numbers are pushed onto the stack  
-2. When an operator is encountered, two operands are popped  
-3. The operation is applied  
-4. The result is pushed back onto the stack  
-
-At completion, the stack contains a single result.
-
-## Postfix Evaluation Example
-
-```
-Expression: 5 1 2 + 4 * + 3 -
-Result:     14.0000
-```
+## Project Structure
+- `PostfixCalculator.java` – Main program with stack logic
 
 ## How to Run
 
-1. Open the project in a Java IDE or terminal
-2. Compile:
+### Prerequisites
+- Java Development Kit (JDK 11+)
+
+## How to Run
+
+### Prerequisites
+- Java Development Kit (JDK 11+)
+
+### Steps
 ```bash
 javac PostfixCalculator.java
-```
-3. Run:
-```
 java PostfixCalculator
 ```
-## Example Output
 
-Postfix Calculator (Supports floating-point numbers)
-Enter a postfix expression or type 'exit' to quit.
+## Example Output
+```text
 Expression: 3.5 1.5 +
 Result: 5.0000
+
 Expression: 10 2 /
 Result: 5.0000
-Expression: exit
-Calculator terminated.
+```
+
+## What I Learned
+This project helped me understand how stacks are used to evaluate expressions and how operators are applied in postfix notation. It also improved my ability to handle edge cases and user input errors.
 
 ## Future Improvements
+- Add GUI interface
+- Support more operations
+- Improve error messaging
 
-- Add graphical user interface (GUI)
-- Support additional mathematical functions
-- Improve expression validation and error messaging
+## Screenshots
 
-Expression: exit
-Calculator terminated.
+### Calculator Interface
+![Postfix Calculator](Screenshots/PostfixCalculator.png)
+
+### Additional Example
+![Postfix Calculator Example](Screenshots/PostfixCalculator2.png)
+
+### Output Result
+![Program Output](Screenshots/output.png)
